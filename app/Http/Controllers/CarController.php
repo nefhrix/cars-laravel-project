@@ -94,7 +94,7 @@ class CarController extends Controller
        
 
         $manufacturers = Manufacturer::all();
-        return view('edit')->with('cars',$id)->with('manufacturers',$manufacturers);
+        return view('cars.edit')->with('cars',$id)->with('manufacturers',$manufacturers);
     }
 
     /**

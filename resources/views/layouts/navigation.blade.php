@@ -22,7 +22,7 @@
                             {{ __('All cars') }}
                         </x-nav-link>
                     @elseif(auth()->user()->hasRole('user'))
-                        <x-nav-link :href="route('user.cars.index')" :active="request()->routeIs('user.cars.index')">
+                        <x-nav-link :href="route('cars.index')" :active="request()->routeIs('user.cars.index')">
                             {{ __('All cars') }}
                         </x-nav-link>
                     @else

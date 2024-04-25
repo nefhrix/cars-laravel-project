@@ -36,6 +36,10 @@
                     <td>{{ $cars->manufacturer->name }}</td>
                 </tr>
                 <tr>
+                    <td class="bg-light"><strong>Emissions Rating</strong></td>
+                    <td>{{ $cars->emissions }}</td>
+                </tr>
+                <tr>
                     <td colspan="2">
                         @if ($cars->car_image)
                             <img src="{{ asset($cars->car_image) }}" class="img-fluid" alt="Car Image">

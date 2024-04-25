@@ -1,4 +1,4 @@
-<x-app-layout>
+
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Create New Car ') }}
@@ -42,6 +42,14 @@
                         placeholder="color..."
                         class="w-full mt-6"
                         :value="@old('color')"></x-text-input>
+
+                        <x-text-input
+                        type="number"
+                        name="emissions"
+                        field="emissions"
+                        placeholder="emissions..."
+                        class="w-full mt-6"
+                        :value="@old('emissions',$cars->emissions)"></x-text-input>
    
                         <x-file-input
                         type="file"
@@ -61,4 +69,3 @@
             </div>
         </div>
     </div>
-</x-app-layout>
